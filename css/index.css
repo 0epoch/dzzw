@@ -1,0 +1,148 @@
+header {
+	background: #FFAC00;
+	padding: 1em calc(50% - 480px);
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+	background: #F7F6F2;
+}
+
+/*主体*/
+.main {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	width: 100%;
+	max-width: 68.57em;
+	margin-top: 1em;
+	/*background: red;*/
+}
+
+/*右侧边栏*/
+.sidebar {
+	width: calc(19.28em);
+	background: #fff;
+}
+
+
+.content {
+	width: calc(100% - 23.57em);
+}
+
+/*斗图区*/
+.duel {
+	margin-bottom: 1em;
+	background: #fff
+}
+
+.duel-details {
+	width: 100%;
+	padding: 0 1em; 
+}
+
+.duel-start {
+	display: flex;
+}
+
+.face img{
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+}
+
+.comment-face img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
+
+/*.user .user-info:last-child {
+	color: #666;
+}*/
+
+/*斗图之图*/
+.duel-img {
+	max-width: 100% ;
+	padding: 1em;
+}
+
+.duel-img img{
+	max-width: 100%;
+	display: block;
+}
+
+/*斗图收获*/
+.duel-take {
+	padding: .8em 1em;
+	max-width: 100%;
+	border-top: 1px solid #EEE;
+	display: flex;
+	justify-content: space-between;
+	/*border-bottom: 1px solid #ddd;*/
+}
+
+
+.duel-start,.sidebar{
+	padding: .8em 1em;
+}
+
+/*评论区*/
+.discuss {
+	/*display: none;*/
+	background: #FDFCFA;
+	position: relative;
+	max-width: 100%;
+	margin-top: .5em;
+}
+
+
+
+.discuss:after {
+	position: absolute;
+	content: '\a0';
+	top: -17px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -5px; 
+	border: 10px solid transparent;
+	border-bottom-color: #FDFCFA;	
+}
+
+.discuss:before {
+	position: absolute;
+	content: '\a0';
+	margin-left: -5px;
+	top: -19px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #ddd;
+}
+
+.discuss .comment {
+	display: flex;
+	padding: .8em 0 .8em 1em;
+	border-top: 1px solid #ddd;
+}
+
+.discuss .talk {
+	width: 100%;
+	padding: 0 1em;
+}
+
+.talk .reply {
+	display: flex;.
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+footer {
+	padding: 1em calc(50% - 480px);
+	background: #FFAC00;
+}
+
